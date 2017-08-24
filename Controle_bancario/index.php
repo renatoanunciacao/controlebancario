@@ -45,7 +45,7 @@
                     $menu = $_REQUEST['menu'];
                     require ('modulos/' . $menu . '/' . $menu . '.php');
                 } else {
-                    echo "Escolha uma opção do menu";
+                    echo "Bem-vindo a sua conta ".$_SESSION['ses_usu_nome'];
                 }
             } else {
                 require('login_form.php');

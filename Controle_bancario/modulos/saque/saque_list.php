@@ -9,7 +9,7 @@
 
 
         <div>  
-            <table class="table table-bordered">
+            <table class="table table-hover">
 
                 <tr>
                     <th>SAQUES</th>

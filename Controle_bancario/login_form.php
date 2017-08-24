@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <style>
-            
-               body{
-                background-color: lightgreen; 
-            }
-           
             .corpo{
-                position: absolute;
-                left: 520px;
-                width: 50%;
-                top: 253px;
-                width: 30%;
-             
-                
+                width: 450px;
+                position: relative;
+                margin: auto;
+                top: 250px;
+                    
             }
         </style>
-
     </head>
 
     <body>
- <div class="corpo">
+        <div class="corpo">
 
             <h1>CONTROLE BANCÁRIO</h1><br><br>
-            <form name="Frm_login" method="post" action="login.php">
+            <form class="form-control-static" name="Frm_login" method="post" action="login.php">
 
                 <label>
-                    Usuário: <input type="text"  name="edt_usu_login" size="30" value="" required><br><br>
-                </label>
+                    Usuário: <input type="text" name="edt_usu_login" size="30" value="" required><br><br>
+                </label><br>
                 <label>
-                    Senha: <input type="password" name="edt_usu_senha" size="30" value="" required><br><br>
-                </label>
-               
+                      Senha:  <input type="password" name="edt_usu_senha" size="30" value="" required><br><br>
+                </label><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn-success btn-lg" name="btn_enviar" ><span class="glyphicon glyphicon-log-in" >   Login</span></button>
+
+                <button type="reset" class="btn btn-danger btn-lg" name="btn_limpar" ><span class="glyphicon glyphicon-remove-sign"> Cancelar</span></button>
                 
 
-             
-                <br><br>
-                <input type="reset" class="btn-danger" name="btn_limpar" value="LIMPAR">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" class="btn-success" name="btn_enviar" value="LOGAR">
-               
-
-
-
             </form>
- </div>
+        </div>
     </body>
 </html>

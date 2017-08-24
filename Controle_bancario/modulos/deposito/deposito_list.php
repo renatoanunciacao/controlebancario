@@ -1,36 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body{
-                background-color: lightgreen; 
-            }
-            table{
-                border: 2px solid black;
-                border-color: black;
-                border-radius: 4px;
-            }
-            table tr td{
-                border: 1px solid black;
-                border-color: black;
-                border-radius: 2px;
-                background-color: lightseagreen;
-            }
-            table tr td:hover{
-                background-color: cyan;
-            }
-            div{
-                border: none;
-            }
-
-        </style>
-
+        <link href="../../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>  
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
 
 
         <div>  
-            <table cellpadding="1" width="50%" align="center">
+            <table class="table table-hover" >
 
                 <tr  border="1px solid">
                     <th colspan="4">DEPÓSITOS</th>
