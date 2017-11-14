@@ -33,6 +33,8 @@
                     <li><a href="?menu=juridica">JURIDICAS</a></li>
                     <li><a href="?menu=conta">CONTAS</a></li>
                     <li><a href="?menu=usuario">USUÁRIOS</a></li>
+                    <li><a href="relatorios/depositos_efetuados.php"target="_blank" >RELATÓRIO PDF DOS DEPÓSITOS EFETUADOS</a></li>
+                    <li><a href="relatorios/grafico_colunas.php" target="_blank">GRÁFICO DOS DEPÓSITOS</a></li>
                     </nav>
                     <?php
                 }

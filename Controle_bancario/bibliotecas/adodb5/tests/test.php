@@ -120,7 +120,7 @@ FROM `nuke_stories` `t1`, `nuke_authors` `t2`, `nuke_stories_cat` `t3`, `nuke_to
 		$db->SelectLimit($sql);
 		echo $db->ErrorMsg();*/
 	}
-	$ADODB_CACHE_DIR = dirname(TempNam('/tmp','testadodb'));
+	$ADODB_CACHE_DIR = dirname(TempNam('/tmp','tCidadedb'));
 	$db->debug = false;
 	//print $db->UnixTimeStamp('2003-7-22 23:00:00');
 

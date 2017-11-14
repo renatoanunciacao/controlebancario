@@ -23,7 +23,7 @@
 $testmssql = true;
 //$testvfp = true;
 $testoracle = true;
-$testado = true;
+$tCidade = true;
 $testibase = true;
 $testaccess = true;
 $testmysql = true;

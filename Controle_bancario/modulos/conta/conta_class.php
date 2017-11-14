@@ -113,7 +113,7 @@ class conta{
             $sel = ' ';
             if ($reg->PES_CODIGO == $this->reg->PES_CODIGO)
                 $sel = "selected";
-            $lista .='<option value="' . $reg->PES_CODIGO . ' "' . $sel . '>' . $reg->PES_TIPO . '</option>';
+            $lista .='<option  value="' . $reg->PES_CODIGO . ' "' . $sel . '>' . $reg->PES_TIPO . '</option>';
         }
         return $lista;
     }

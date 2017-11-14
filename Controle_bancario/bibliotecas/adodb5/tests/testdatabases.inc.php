@@ -38,7 +38,7 @@
 
 <td><input type=checkbox name="testdb2" value=1 <?php echo !empty($testdb2) ? 'checked' : '' ?>> DB2<br>
 <input type=checkbox name="testvfp" value=1 <?php echo !empty($testvfp) ? 'checked' : '' ?>> VFP+ODBTP<br>
-<input type=checkbox name="testado" value=1 <?php echo !empty($testado) ? 'checked' : '' ?>> ADO (for mssql and access)<br>
+<input type=checkbox name="tCidade" value=1 <?php echo !empty($tCidade) ? 'checked' : '' ?>> ADO (for mssql and access)<br>
 <input type=checkbox name="nocountrecs" value=1 <?php echo !empty($nocountrecs) ? 'checked' : '' ?>> $ADODB_COUNTRECS=false<br>
 <input type=checkbox name="nolog" value=1 <?php echo !empty($nolog) ? 'checked' : '' ?>> No SQL Logging<br>
 <input type=checkbox name="time" value=1 <?php echo !empty($_GET['time']) ? 'checked' : '' ?>> ADOdb time test
@@ -235,7 +235,7 @@ if (!empty($testaccess)) {
 
 }
 
-if (!empty($testaccess) && !empty($testado)) { // ADO ACCESS
+if (!empty($testaccess) && !empty($tCidade)) { // ADO ACCESS
 
 	$db = ADONewConnection("ado_access");
 	print "<h1>Connecting $db->databaseType...</h1>";
@@ -432,7 +432,7 @@ if (!empty($testmssql)) { // MS SQL Server via ODBC
 }
 
 ADOLoadCode("ado_mssql");
-if (!empty($testmssql) && !empty($testado) ) { // ADO ACCESS MSSQL -- thru ODBC -- DSN-less
+if (!empty($testmssql) && !empty($tCidade) ) { // ADO ACCESS MSSQL -- thru ODBC -- DSN-less
 
 	$db = ADONewConnection("ado_mssql");
 	//$db->debug=1;
@@ -448,7 +448,7 @@ if (!empty($testmssql) && !empty($testado) ) { // ADO ACCESS MSSQL -- thru ODBC 
 
 }
 
-if (!empty($testmssql) && !empty($testado)) { // ADO ACCESS MSSQL with OLEDB provider
+if (!empty($testmssql) && !empty($tCidade)) { // ADO ACCESS MSSQL with OLEDB provider
 
 	$db = ADONewConnection("ado_mssql");
 	print "<h1>Connecting DSN-less OLEDB Provider $db->databaseType...</h1>";

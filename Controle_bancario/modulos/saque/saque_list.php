@@ -29,7 +29,7 @@
                         <td><a href="?menu=saque&acao=listar&ord=2">Número da conta</a></td>
                         <td><a href="?menu=saque&acao=listar&ord=3">Valor do saque</a></td>
                         <td><a href="?menu=saque&acao=listar&ord=3">Data do saque</a></td>
-                        <td><button id="sacar" class="btn btn-info"><span class="glyphicon glyphicon-euro"><a href="?menu=saque&acao=sacar"> Sacar</span></a></button></td>
+                        <td><button id="sacar" class="btn btn-success"><span class="glyphicon glyphicon-euro"><a href="?menu=saque&acao=sacar"> Sacar</span></a></button></td>
                         <?php
                     } else {
                         ?>

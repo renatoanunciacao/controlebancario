@@ -2,39 +2,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body{
-                background-color: lightgreen; 
-            }
-            #corpo{
-                position: relative;
-                border: 2px solid;
-                border-radius: 10px;
-                left: 404px;
-                width: 800px;
-                height: 300px;
-            }
-        </style>
+        <link href="../../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
 
     </head>
 
     <body>
-        <div id="corpo"  align="center">
+        <div class="container">
+            <form align="center" name="Frm_cadastro" class="form-inline" method="post" action="index.php">
+                <h2 align="center">CADASTRO DE USUÁRIOS</h2><br><br>
+                <div class="form-group">
+                    Nome:<input type="text" class="form-control" name="edt_usu_nome" size="30" value="" required>
+                    <br></div><br><br>
+                <div class="form-group">
+                    Login:<input type="text" class="form-control" name="edt_usu_login" size="30" value="" required><br>
+                </div><br><br>
+                <div class="form-group">
+                    Senha:<input type="password" class="form-control" name="edt_usu_senha" size="20" value="" required><br>
+                </div><br><br>
+                <div class="form-group">
+                    Permissão:<select class="form-control" name="edt_usu_permissao" required="required">
+                        <?php echo $mod->lista_permissao(); ?>
 
-            <h2 align="center">CADASTRO DE USUÁRIOS</h2><br><br>
-            <form name="Frm_cadastro" method="post" action="index.php">
-
-
-                Nome:<input type="text" name="edt_usu_nome" size="30" value="" required><br>
-                Login:<input type="text" name="edt_usu_login" size="30" value="" required><br>
-                Senha:<input type="password" name="edt_usu_senha" size="20" value="" required><br>
-                Permissão:<select name="edt_usu_permissao" required="required">
-                    <?php echo $mod->lista_permissao(); ?>
-
-                </select><br>
-                <input type="reset" name="btn_limpar" value="LIMPAR">
+                    </select><br><br>
+                </div><br><br>
+                <button class="btn btn-danger" type="reset" name="btn_limpar"><span class="glyphicon glyphicon-log-out"> Limpar</span></button>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" name="btn_enviar" value="SALVAR">
+                <button class="btn btn-success" type="submit" name="btn_enviar" value="SALVAR"><span class="glyphicon glyphicon-log-in"> Enviar</span></button>
                 <br><a href='./login_form.php'> Voltar</a>
                 <input type="hidden" name="menu" value="<?php echo $menu; ?>">
                 <input type="hidden" name="acao" value="<?php echo 'gravar_' . $acao; ?>">
